@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bg-color="lightblue">
+    <form action="{% url "submit_url" %}" method="post">
+    {% csrf_token %}
+    <h1>Welcome to new shortify</h1>
+    <input type="url" name="urlq" placeholder="Enter your url here">
+    <button type="submit">Shorten</button>
+    </form>
+    <h2>New url:</h2><br>
+    {% if urln %}
+    <div><a href={{urln}}>{{urln}}</a></div>
+    {% endif %}
+</body>
+<script>
+
+</script>
+</html>
