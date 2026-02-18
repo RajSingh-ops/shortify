@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-rp7!5vd%q61j6q%h_xdfb9xs!z!t&bq3%-ko42pv&)k$682#zp'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['http://shortify.onrender.com/','localhost:8000','127.0.0.1']
 
