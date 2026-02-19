@@ -7,6 +7,6 @@ def submit_url(request):
     urlq=request.POST['urlq']
     urll=Url(url1=urlq)
     urll.save()
-    return render(request,'index.html',{"urln":"https://shortify.onrender.com/"+str(urll.id)})
+    return render(request,'index.html',{"urln":"https://shortify-ytns.onrender.com/"+str(urll.id)})
 def home(request):
     return render(request,'index.html')
